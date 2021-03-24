@@ -1,31 +1,137 @@
-#a{
-    background-color:rgb(206, 205, 202);
-}
-#b{
-background-color: rgb(170, 170, 167);
-}
-#c{
-    background-color: rgb(241, 206, 214);
-}
-#d{
-    background-color: rgb(223, 224, 224);
 
-}
-#e{
-    background-color: rgb(182, 181, 180);
+/*disktop-view*/
+@media only screen and (min-width:960px) { 
+    #a{
+        background-color:#aca9a9;
+  
+      }
+      #b{
+        background-color:#ec8cef;
+          
+  
+      }
+      #c {
+         background-color:#dbd7d5;
+       
+      }
+      #d{
+        background-color:#787679;
+          
+      }
+      
+      #e{
+          background-color:#a3868f;
+       
+      }
+  
+      #f{
+          background-color:#676865;
+      
+  
+      }
+      #g{   
+          background-color: #a3a3a1;  
+        
+      }
+     #h{
+         background-color:#ff89e1;
+      
+      }
+     
+      #i{
+          background-color: rgb(238, 201, 222);
+  
+      }
+  }  
+/*tablet-view*/
+@media only screen and (min-width:768px) and (max-width:960px) { 
+  
+    #a{
+      height: 100px;
+      background-color:#d35d6e;
 
-}
-#f{
-    background-color: rgb(131, 132, 134);
+    }
+    #b{
+      background-color:#efb08c;
+        
 
-}
-#g{
-background-color: rgb(218, 201, 215);
-}
-#h{
-    background-color: rgb(157, 160, 157);
+    }
+    #c {
+       background-color:#f8d49d;
+     
+    }
+    #d{
+      background-color:#5aa469;
+        
+    }
+    
+    #e{
+        background-color:#61b15a;
+     
+    }
 
-}
-#i{
-background-color: rgb(139, 139, 139);
-}
+    #f{
+        background-color:#adce74;
+    
+
+    }
+    #g{   
+        background-color: #f5f1b0;  
+      
+    }
+   #h{
+       background-color:#ffce89;
+    
+    }
+   
+    #i{
+        background-color: rgb(252, 218, 206);
+
+    }
+}  
+
+/* mobile view */
+@media only screen and (max-width:767px) { 
+    #a{
+       background-color: rgb(198, 243, 152);
+       
+      
+    }
+    #b{
+        background-color: khaki;
+       
+     
+    }
+    #c{
+        background-color: honeydew;
+       
+    }
+    #d{
+       background-color: gray;
+         
+    }
+    #e{
+        background-color: rgb(250, 229, 108);
+       
+    }
+
+    #f{
+         background-color: dimgray;
+       
+     
+    }
+    #g{
+        background-color: darkseagreen;
+      
+    }
+    #h{
+        background-color: rgb(155, 120, 108);
+       
+       
+    }
+   
+    #i{
+        background-color: rgb(202, 253, 135);
+        
+    }
+} 
