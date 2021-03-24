@@ -1,96 +1,169 @@
-
-/* desktop view */
- @media  (min-width:768px) { 
+/*disktop-view*/
+@media only screen and (min-width:960px) { 
   
     #con{
-        width:960px ;
-        text-align: center;      
-        overflow: auto;
-        margin-left: auto;
-        margin-right: auto;
+        display: grid;
+        grid-template-columns: 350px repeat(5,200px);
+        grid-template-rows:350px 370px ;
 
-       
     }
-    #a{
-        width: 960px;
-        height: 100px;
-
+    #a{   
+      grid-column:1;
+      grid-row: 1 /span 2;
     }
     #b{
-        width: 200px;
-        height: 600px;
-        display: inline-block;
-        float:left;
+       grid-column:2 ;
+       grid-row: 1;
+      
 
     }
-    #c ,#d{
-        width: 380px;
-        height: 200px;
-        display: inline-block;
-        float:left;
+    #c {
+        grid-column:2;
+        grid-row: 2;
+       
+    }
+    #d{
+       grid-column:3;
+        grid-row: 1;
+        
+    }
+    
+    #e{
+        grid-column: 3;
+        grid-row: 2;
+       
+    }
+
+    #f{
+        grid-column: 4;
+        grid-row: 1/span 2;
+       
+    }
+    #g{
+        grid-column: 5;
+        grid-row: 1;
+    }
+   #h{
+    grid-column: 5;
+    grid-row: 2;
+   
+    }
+   
+    #i{
+        grid-column:6;
+        grid-row:1/span 2;
         
 
     }
-    
-    #e,#f,#g,#h{
-    width: 190px;
-    height: 250px;
-    display: inline-block;
-    float: left;
-    }
-   
-    #i{
-        width: 760px;
-        height: 150px;
-        display: inline-block;
-        clear: both;
+}  
 
-    }
-} 
-
-
-/* mobile view */
-@media  (max-width:768px){
-   
+/* tablet view */
+@media only screen and (min-width:768px) and (max-width:960px) { 
+  
     #con{
-        width: 480px;
-        overflow: auto;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+        display: grid;
+        grid-template-columns: 200px repeat(4,190px);
+        grid-template-rows:100px 200px 250px 150px ;
+       
     }
     #a{
-       width: 480px;
-       height: 75px; 
-       float: left;
+
+      grid-column:1 /span 5;
+      grid-row: 1;
+     
 
     }
     #b{
-        width: 480px;
-        height: 150px;
-        float: left;
+       grid-column:1 ;
+       grid-row: 2/span 3;
+      
 
     }
-    #c ,#d{
-        width: 480px;
-        height: 125px;
-        float: left;
+    #c {
+        grid-column: 2 / span 2;
+        grid-row: 2;
+       
+    }
+    #d{
+       grid-column: 4/span 2;
+        grid-row: 2;
+        
+    }
+    
+    #e{
+        grid-column: 2;
+        grid-row: 3;
+       
+    }
 
+    #f{
+        grid-column: 3;
+        grid-row: 3;
+       
     }
-    #e,#g,#h,#f{
-        width: 240px;
-        height: 250px;
-        display:inline-block;
+    #g{
+        grid-column: 4;
+        grid-row: 3;
     }
-    #e,#g{
-        float: left;
+   #h{
+    grid-column: 5;
+    grid-row: 3;
+   
     }
    
     #i{
-        width: 480px;
-        height: 80px;
-        clear: both;
+        grid-column: 2 / span 4;
+        grid-row: 4;
+        
+
     }
-}
-Batool
-I solved the problem, I forgot to write meta syntax in html file
+}  
+
+
+/* mobile view */
+@media only screen and (max-width:767px) { 
+    #con{
+       display: grid;
+       grid-template-columns:240px 240px ;
+       grid-template-rows:75px 150px 125px 125px 250px 250px 80px ;
+
+    }
+    #a{
+       grid-column: 1 /span 2;
+       grid-row: 1;
+    }
+    #b{
+       
+       grid-column: 1/span 2;
+       grid-row: 2;
+    }
+    #c{
+        grid-column: 1/span 2;
+        grid-row: 3;
+    }
+    #d{
+        grid-column: 1/span 2;
+        grid-row: 4;
+      
+    }
+    #e{
+        grid-column: 1;
+        grid-row: 5;
+    }
+     #f{
+      grid-column: 2;
+      grid-row: 5;
+    }#g{
+        grid-column: 1;
+        grid-row: 6;
+    }
+    #h{
+        grid-column: 2;
+        grid-row: 6;
+    }
+   
+    #i{
+        grid-column: 1/span 2;
+        grid-row: 7;
+    }
+} 
